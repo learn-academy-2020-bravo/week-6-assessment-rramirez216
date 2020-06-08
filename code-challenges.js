@@ -32,12 +32,10 @@ const nameAndOccupation = (arr) => {
         let capitalizedFirst = firstName.charAt(0).toUpperCase() + firstName.slice(1)
         let capitalizedLast = lastName.charAt(0).toUpperCase() + lastName.slice(1)
         // print out the value with string interpolation
-        return `${capitalizedFirst} ${capitalizedLast} is a ${occupation}`
+        return `"${capitalizedFirst} ${capitalizedLast} is a ${occupation}."`
     })
-    
-    return nameArray.forEach(element => {
-        console.log(element); 
-    })
+    //return the name array and join the with a space inbetween each string
+    return nameArray.join(' ')
 }
 
 
